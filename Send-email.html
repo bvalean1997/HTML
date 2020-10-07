@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Send email</title>
+
+        <style>
+        label {
+                display: block;
+                margin-bottom: 4px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="https://18z9lalk4f.execute-api.us-east-1.amazonaws.com/dev/email/send"
+            method="POST">
+
+        <label for="fromName">From Name</label>
+        <input id="fromName" name="fromName" type="text" placeholder="From Name" />
+
+        <label for="toEmail">To Email</label>
+        <input id="toEmail" name="toEmail" type="email" placeholder="To Email" />
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Subject" />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Message" rows="10"></textarea>
+
+        <button>Submit</button>
+   
+
+    </form>
+    </div>
+
+    </body>
+</html>
